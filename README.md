@@ -1,5 +1,5 @@
-# Project updated with last Visaul Studio
-#   and slightly reorgainzed files
+# Project updated with last Visual Studio
+#   and slightly reorganized files
 #
 # Original plugin :
 
