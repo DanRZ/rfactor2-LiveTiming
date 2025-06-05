@@ -23,8 +23,7 @@ DEST PORT="6789" // port rf2livetiming is listening on
 
 ## Compilation
 
-* Open the Visual Studio solution
-* Use Visual Studio 2012 build tools
+* Open the Visual Studio solution ( VS2022 )
 * Build
 
 ## Notes
