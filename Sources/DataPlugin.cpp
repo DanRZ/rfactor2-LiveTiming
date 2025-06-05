@@ -106,7 +106,7 @@ void DataPlugin::Startup(long version)
 			localhost = 1;
 		} else if (localhost)
 			log("localhost");
-		if(fscanf_s(settings, "DEST IP=\"%[^\"]\"\n", iniip, _countof(iniip)) != 1) {
+		if(fscanf_s(settings, "DEST IP=\"%[^\"]\"\n", iniip, (unsigned int) _countof(iniip)) != 1) {
 			if(localhost)
 				log("could not read IP, but using localhost");
 			else
@@ -514,7 +514,7 @@ int DataPlugin::SendResults(FILE** r, char* name) {
 		nsent = send(tcp_s, buf, (int) nread, 0);
 		if(nsent < 0)
 			return -2;
-		if(nsent < nread)
+		if(nsent < (int) nread)
 			log("did not send all bytes");
 		log("sent packet");
 	}

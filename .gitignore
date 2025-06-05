@@ -1,0 +1,7 @@
+.vs
+*.user
+x64
+Win32
+VCXX/x64
+VCXX/Win32
+
